@@ -1,0 +1,7 @@
+Package: quirc
+Version: 1.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 654141828f8e28d78686337ac846d0cf3ff3d0392751828b8e02fdf2f2e1784a
+Description: quirc is one of the C library available for scanning QR Codes
