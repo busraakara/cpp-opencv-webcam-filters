@@ -1,8 +1,0 @@
-Package: flatbuffers
-Version: 25.9.23
-Port-Version: 1
-Depends: vcpkg-cmake, vcpkg-cmake-config
-Architecture: x64-windows
-Multi-Arch: same
-Abi: c4c06489b48798d8f0c110e15ccfea98c4f6557c6e6cf26ff182da7b0e8d88ed
-Description: FlatBuffers is a cross platform serialization library architected for maximum memory efficiency. It allows you to directly access serialized data without parsing/unpacking it first, while still having great forwards/backwards compatibility.
