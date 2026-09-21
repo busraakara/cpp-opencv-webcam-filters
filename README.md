@@ -8,18 +8,6 @@ I created this project while learning C++ to reinforce the concepts I have studi
 
 The application captures video from the webcam and allows different image processing filters to be applied in real time using OpenCV.
 
-## Features
-
-The following filters can be selected using the keyboard:
-
-* `0` - Original image
-* `1` - Grayscale
-* `2` - Bilateral Filter
-* `3` - Binary Threshold
-* `4` - Canny Edge Detection
-* `5` - Sobel Edge Detection
-* `Q` - Quit the application
-
 ## What I Practiced
 
 While building this project, I practiced:
@@ -35,25 +23,12 @@ While building this project, I practiced:
 * Working with an external C++ library
 * Basic image processing concepts with OpenCV
 
-## Technologies
+## Build With
 
 * C++
 * OpenCV
 * Visual Studio
 * vcpkg
-
-## Project Structure
-
-```text
-cpp-opencv-webcam-filters/
-├── App.cpp
-├── App.h
-├── Filters.cpp
-├── Filters.h
-├── main.cpp
-├── vcpkg.json
-└── webcamFilters.vcxproj
-```
 
 ## Requirements
 
@@ -62,14 +37,26 @@ cpp-opencv-webcam-filters/
 * vcpkg
 * A webcam
 
-The project uses `vcpkg.json` to declare OpenCV as a dependency.
+OpenCV is managed through the project's `vcpkg.json` manifest.
 
-## Running the Project
+## Build and Run
 
-1. Clone the repository.
-2. Install the required dependencies using vcpkg.
-3. Open the project in Visual Studio.
-4. Build and run the application.
+1. Clone the repository:
+
+git clone https://github.com/busraakara/cpp-opencv-webcam-filters.git
+
+2. Install the required dependencies using vcpkg:
+
+vcpkg install
+
+3. Build from Developer PowerShell for Visual Studio:
+
+msbuild webcamFilters.vcxproj /p:Configuration=Release /p:Platform=x64
+
+4. Run:
+
+.\x64\Release\webcamFilters.exe
+
 5. Use the number keys `0-5` to switch between filters.
 
 ## Purpose
