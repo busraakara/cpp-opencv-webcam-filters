@@ -23,19 +23,11 @@ While building this project, I practiced:
 * Working with an external C++ library
 * Basic image processing concepts with OpenCV
 
-## Build With
-
-* C++
-* OpenCV
-* Visual Studio
-* vcpkg
-
 ## Requirements
 
 * C++ compiler
 * OpenCV
 * vcpkg
-* A webcam
 
 OpenCV is managed through the project's `vcpkg.json` manifest.
 
